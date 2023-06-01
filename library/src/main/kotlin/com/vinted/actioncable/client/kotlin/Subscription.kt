@@ -3,7 +3,7 @@ package com.activeliang.actioncable.client.kotlin
 typealias ConnectedHandler = () -> Unit
 typealias RejectedHandler = () -> Unit
 typealias ReceivedHandler = (data: Any?) -> Unit
-typealias ReceivedPingHandler = (data: Any?) -> Unit
+typealias ReceivedPingHandler = () -> Unit
 typealias DisconnectedHandler = () -> Unit
 typealias FailedHandler = (e: Throwable) -> Unit
 
