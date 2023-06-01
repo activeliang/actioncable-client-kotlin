@@ -6,7 +6,7 @@ plugins {
     id("maven-publish")
 }
 
-group = "com.github.vinted"
+group = "com.github.activeliang"
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
