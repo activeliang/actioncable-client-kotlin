@@ -73,6 +73,10 @@ class Subscriptions constructor(private val consumer: Consumer) {
         subscriptions.filter { it.identifier == identifier }.forEach { it.notifyReceived(data) }
     }
 
+    fun notifyReceivedPing(identifier: String, data: Any?) {
+        subscriptions.filter { it.identifier == identifier }.forEach { it.notifyReceivedPing(data) }
+    }
+
     fun notifyFailed(error: Throwable) {
         subscriptions.forEach { it.notifyFailed(error) }
     }

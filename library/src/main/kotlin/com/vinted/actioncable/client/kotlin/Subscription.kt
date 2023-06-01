@@ -3,6 +3,7 @@ package com.vinted.actioncable.client.kotlin
 typealias ConnectedHandler = () -> Unit
 typealias RejectedHandler = () -> Unit
 typealias ReceivedHandler = (data: Any?) -> Unit
+typealias ReceivedPingHandler = (data: Any?) -> Unit
 typealias DisconnectedHandler = () -> Unit
 typealias FailedHandler = (e: Throwable) -> Unit
 
@@ -25,6 +26,8 @@ class Subscription constructor(private val consumer: Consumer, channel: Channel)
      * Callback called when the subscription receives data from the server.
      */
     var onReceived: ReceivedHandler? = null
+
+    var onReceivedPing: ReceivedPingHandler? = null
 
     /**
      * Callback called when the subscription has been closed.
@@ -61,6 +64,10 @@ class Subscription constructor(private val consumer: Consumer, channel: Channel)
 
     fun notifyReceived(data: Any?) {
         onReceived?.invoke(data)
+    }
+
+    fun notifyReceivedPing(data: Any?) {
+        onReceivedPing?.invoke(data)
     }
 
     fun notifyDisconnected() {
