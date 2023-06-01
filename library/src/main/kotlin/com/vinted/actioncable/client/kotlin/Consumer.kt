@@ -52,7 +52,7 @@ class Consumer(
                 }
                 PING -> {
                     connectionMonitor.recordPing()
-                    subscriptions.notifyReceivedPing(parsedMessage.identifier!!, parsedMessage.body)
+                    subscriptions.notifyReceivedPing()
                 }
                 CONFIRMATION -> subscriptions.notifyConnected(parsedMessage.identifier!!)
                 REJECTION -> subscriptions.reject(parsedMessage.identifier!!)

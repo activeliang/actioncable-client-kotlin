@@ -66,8 +66,8 @@ class Subscription constructor(private val consumer: Consumer, channel: Channel)
         onReceived?.invoke(data)
     }
 
-    fun notifyReceivedPing(data: Any?) {
-        onReceivedPing?.invoke(data)
+    fun notifyReceivedPing() {
+        onReceivedPing?.invoke()
     }
 
     fun notifyDisconnected() {
