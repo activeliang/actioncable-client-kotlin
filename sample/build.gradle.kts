@@ -10,7 +10,7 @@ android {
     compileSdkVersion(Versions.COMPILE_SDK_VERSION)
 
     defaultConfig {
-        applicationId = "com.vinted.action.cable.client.sample"
+        applicationId = "com.activeliang.action.cable.client.sample"
         minSdkVersion(Versions.MIN_SDK_VERSION)
         targetSdkVersion(Versions.TARGET_SDK_VERSION)
         versionCode = Versions.VERSION_CODE

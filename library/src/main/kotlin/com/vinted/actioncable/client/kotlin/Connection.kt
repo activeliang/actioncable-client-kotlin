@@ -1,4 +1,4 @@
-package com.vinted.actioncable.client.kotlin
+package com.activeliang.actioncable.client.kotlin
 
 import okhttp3.*
 import java.io.IOException

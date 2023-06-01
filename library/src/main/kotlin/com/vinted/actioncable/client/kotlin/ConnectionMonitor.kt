@@ -1,4 +1,4 @@
-package com.vinted.actioncable.client.kotlin
+package com.activeliang.actioncable.client.kotlin
 
 class ConnectionMonitor(
         private val connection: Connection,

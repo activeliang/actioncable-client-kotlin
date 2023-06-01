@@ -1,4 +1,4 @@
-package com.vinted.actioncable.client.kotlin.utils
+package com.activeliang.actioncable.client.kotlin.utils
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.channels.Channel

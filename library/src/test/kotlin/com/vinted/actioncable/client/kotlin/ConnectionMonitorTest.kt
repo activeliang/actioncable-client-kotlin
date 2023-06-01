@@ -1,6 +1,6 @@
-package com.vinted.actioncable.client.kotlin
+package com.activeliang.actioncable.client.kotlin
 
-import com.vinted.actioncable.client.kotlin.ConnectionMonitor.Companion.STALE_THRESHOLD
+import com.activeliang.actioncable.client.kotlin.ConnectionMonitor.Companion.STALE_THRESHOLD
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import org.junit.Test
